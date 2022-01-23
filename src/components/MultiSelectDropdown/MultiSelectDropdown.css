@@ -1,0 +1,37 @@
+.dropdown-menu {
+  display: hidden;
+}
+
+.dropdown-btn {
+  background-color: #fff;
+  font-size: 14px;
+
+  /* vertical-align: baseline; */
+  letter-spacing: normal;
+  word-spacing: 0px;
+  padding: 0px 28px 0px 8px;
+
+  font-weight: 400;
+  text-decoration: rgb(32, 31, 30);
+  text-align: start;
+
+  display: block;
+  height: 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(96, 94, 92);
+  border-radius: 2px;
+
+  line-height: 30px;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: rgb(96, 94, 92);
+
+  /* ------------------- */
+  /* background-color: aqua; */
+  /* height: 1rem; */
+  /* width: auto; */
+  /* max-width: 4rem; */
+}
