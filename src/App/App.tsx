@@ -1,24 +1,30 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import MultiSelectDropdown from "components/MultiSelectDropdown";
+import Modal from "components/Modal";
+import Button from "components/Button";
+
 function App() {
-  const dropDownOpts = [
-    { key: "shreyas", title: "shreyas" },
-    { key: "shreyas", title: "shreyas" },
-    { key: "shreyas", title: "shreyas" },
-    { key: "shreyas", title: "shreyas" },
-    { key: "shreyas", title: "shreyas" },
-    { key: "shreyas", title: "shreyas" },
-    { key: "shreyas", title: "shreyas" },
-  ];
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
     <div>
-      <div className="App">
-        <MultiSelectDropdown options={dropDownOpts} />
-      </div>
       <div>
-        <MultiSelectDropdown options={dropDownOpts} />
+        <Button
+          onClick={() => {
+            setShowModal(true);
+          }}
+        >
+          Open Modal
+        </Button>
+        <Modal
+          title="Hello World !"
+          show={showModal}
+          modalCloser={() => {
+            setShowModal(false);
+          }}
+        >
+          <h2>Children Passed to Modal</h2>
+        </Modal>
       </div>
     </div>
   );
