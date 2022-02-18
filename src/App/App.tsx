@@ -13,8 +13,13 @@ function App() {
     { key: "shreyas", title: "shreyas" },
   ];
   return (
-    <div className="App">
-      <MultiSelectDropdown options={dropDownOpts} />
+    <div>
+      <div className="App">
+        <MultiSelectDropdown options={dropDownOpts} />
+      </div>
+      <div>
+        <MultiSelectDropdown options={dropDownOpts} />
+      </div>
     </div>
   );
 }
