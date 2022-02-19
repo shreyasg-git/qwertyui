@@ -20,11 +20,7 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownPropsType> = ({ options }
 
   const genOptions = () => {
     return options.map((option) => {
-      return (
-        <>
-          <DropDownOption option={option} />
-        </>
-      );
+      return <DropDownOption option={option} key={option.key} />;
     });
   };
 
@@ -45,6 +41,7 @@ const MultiSelectDropdown: React.FC<MultiSelectDropdownPropsType> = ({ options }
 type DropDownOptionPropsType = {
   option: OptionType;
 };
+
 const DropDownOption: React.FC<DropDownOptionPropsType> = ({ option }) => {
   return (
     <div className="dropdown-option-wrapper">
