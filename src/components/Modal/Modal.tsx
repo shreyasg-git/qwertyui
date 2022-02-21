@@ -70,5 +70,10 @@ const Modal: React.FC<ModalProps> = ({
     document.getElementById("modal-container")!
   );
 };
+Modal.displayName = "Modal";
+
+// TODO: -
+// Resolved Button / action.
+// Close Button in the corner.
 
 export default Modal;
